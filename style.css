@@ -25,13 +25,14 @@ grid-template-columns: 200px 1fr;
 }
 
 .brands {
-min-width: 696px;
+min-width: 710px;
 list-style: none;
-padding-top: 20px;
+padding-top: 10px;
 }
 
 .brands li{
     display: inline;
+    margin: 0;
     }
 
 a{
@@ -41,10 +42,12 @@ a{
 }
 
 #wrapper{
-margin: 2rem;
+margin: 1rem;
 display: grid;
+grid-gap: 20px;
 grid-template-columns: 200px 1fr;
 }
+
 
 discography-main{
 grid-column: 1/-1;
