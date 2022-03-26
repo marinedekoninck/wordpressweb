@@ -5,7 +5,14 @@
 body, html{
     padding: 0;
     margin: 0;
-    background-color: blanchedalmond;
+    background-color: rgb(233, 227, 219);
+    font-family: serif;
+}
+
+img{
+max-width: 35rem;
+display: grid;
+grid-template-columns: 200px 1fr;
 }
 
 #wrapper{
@@ -18,6 +25,26 @@ discography-main{
 grid-column: 1/-1;
 }
 
+.album{
+    display: grid;
+}
+
+.album > * {
+    position: relative;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.album section{
+    z-index: 10;
+    background: white;
+    display: grid;
+}
+
+.album h3{
+text-transform: uppercase;
+color: grey;
+}
 
 @media only screen and (min-width: 1000px){
     header{
