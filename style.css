@@ -15,8 +15,33 @@ display: grid;
 grid-template-columns: 200px 1fr;
 }
 
+.menu {
+    height: 84px;
+}
+
+.bar {
+    display: table;
+    margin: 0;
+}
+
+.brands {
+min-width: 696px;
+list-style: none;
+padding-top: 20px;
+}
+
+.brands li{
+    display: inline;
+    }
+
+a{
+    color: rgb(117, 53, 53);
+    text-decoration-line: none;
+
+}
+
 #wrapper{
-margin: 1rem;
+margin: 2rem;
 display: grid;
 grid-template-columns: 200px 1fr;
 }
