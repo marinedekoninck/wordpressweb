@@ -17,6 +17,7 @@ grid-template-columns: 200px 1fr;
 
 .menu {
     height: 84px;
+    box-sizing: border-box;
 }
 
 .bar {
@@ -45,16 +46,23 @@ a{
 margin: 1rem;
 display: grid;
 grid-gap: 20px;
-grid-template-columns: 200px 1fr;
+box-sizing: border-box;
 }
 
 
-discography-main{
+main{
 grid-column: 1/-1;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+column-gap: 4rem;
+row-gap: 9rem;
+box-sizing: border-box;
 }
 
 .album{
     display: grid;
+    grid-gap: 20px;
+    grid-template-rows: (3, 1fr);
 }
 
 .album > * {
@@ -63,7 +71,7 @@ grid-column: 1/-1;
     grid-row: 1/-1;
 }
 
-.album section{
+.info{
     z-index: 10;
     background: white;
     display: grid;
@@ -74,9 +82,12 @@ text-transform: uppercase;
 color: grey;
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (max-width: 550px){
     header{
         grid-column: 1/-1;
+    }
+    main{
+        grid-template-columns: 1fr;
     }
 }
 
